@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+		<style type="text/css">
+					
+					#pleasant{
+						background-repeat: no-repeat;
+
+								width: 700px;
+								height: 400px;
+								left: 100px;
+								top:200px;
+								background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/22/b7/ee/inn-at-pleasant-lake.jpg?w=700&h=-1&s=1);
+								background-size: contain;
+
+
+
+					}
+
+
+
+
+
+
+		</style>
+	
+
+
+</head>
+<body>
+	<audio id="scream" src="scream.mp3"></audio>
+	<center><h1 id="text">Click the Image. I dare you.</h1><center></center>
+
+	<div id="pleasant"></div>
+
+
+	<script type="text/javascript">
+		
+		document.addEventListener("click", function(){
+			document.body.style.backgroundImage = "url(https://media.tenor.com/CMkD8MSaJb8AAAAM/jumpscare.gif)"
+
+			pleasant.style.opacity="0"
+			text.style.opacity="0"
+			scream.play()
+
+
+
+		})
+
+	</script>
+
+
+
+
+</body>
+</html>

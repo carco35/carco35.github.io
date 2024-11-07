@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		
+		#square1{
+				width: 400px;
+				height: 400px;
+				background-image: url(https://thumbs.dreamstime.com/b/drilling-illustration-drill-ground-36697346.jpg);
+				background-size: contain;
+				position: absolute;
+				animation-name: peter;
+				animation-duration: 8s;
+				animation-iteration-count: infinite;
+
+		}
+		#miner{
+
+			width: 300px;
+			height: 400px;
+			left: 500px;
+			top:400px;
+			background-image: url(https://t4.ftcdn.net/jpg/01/74/76/91/360_F_174769108_u0xpKsddCyWwxsA2pW6RrPxgW3EpQjCB.jpg);
+			background-size: contain;
+				position: absolute;
+				animation-name: jan;
+				animation-duration: 8s;
+				animation-iteration-count: infinite;
+		}
+
+		@keyframes peter{
+			0%{
+				top: 0px;
+			}
+
+			/*50%{
+				
+			}*/
+
+			100%{
+				top: 600px;
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXoVnmgxsIcgb0MKY2qmD7Cj_8IzpCPD5Gw&s);
+			}
+
+
+
+		}
+
+		@keyframes jan{
+			0%{}
+			80%{
+				background-image: url(https://thumbs.dreamstime.com/b/happy-miner-cartoon-vector-clip-art-illustration-simple-gradients-all-single-layer-98093947.jpg);
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="square1"></div>
+
+<div id="miner"></div>
+
+
+</body>
+</html>
