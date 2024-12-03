@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+	
+	#turkey{
+
+			width: 200px;
+			height: 200px;
+			background-image: url(https://i.pinimg.com/originals/95/c6/2a/95c62a8c02c15fb5bb473daa9f0731a8.gif);
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			position: absolute;
+			//transition: 6s;
+
+
+
+	}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id="turkey"></div>
+<script type="text/javascript">
+	
+	console.log(Math.random())
+
+	function move (){
+
+	console.log(Math.random())
+	turkey.style.left = Math.random()*800 + "px";
+	turkey.style.top = Math.random()*800 + "px";
+
+
+	}
+
+	setInterval(move, 800)
+
+</script>
+
+
+
+
+</body>
+</html>

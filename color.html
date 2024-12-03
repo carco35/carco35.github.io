@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#circ{	
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				background-color: seagreen;
+				transition: 2s;
+
+		}	
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="circ"></div>
+
+<script type="text/javascript">
+	
+	function move (){
+		let x = Math.random()*1000+"px"
+		let y = Math.random()*1000+"px"
+		circ.style.left = x
+		circ.style.top = y
+}
+	function colorchange(){
+		let r = Math.random()*600
+		let b = Math.random()*500
+		let g = Math.random()*500
+
+		circ.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+
+	}
+
+
+	setInterval(move,1000)
+	setInterval(colorchange,1000)
+	
+</script>
+
+
+</body>
+</html>
