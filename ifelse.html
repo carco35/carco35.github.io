@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#square{
+				width: 100px;
+				height: 100px;
+				top: 100px;
+				left: 100px;
+				background-color: blanchedalmond;
+				display:inline-block;
+				margin:10px;
+
+		}
+
+		#block{
+				width: 100px;
+				height: 100px;
+				top: 100px;
+				left: 800px;
+				background-color: seagreen;
+				display:inline-block;
+				margin:10px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="square"></div>
+<div id="block"></div>
+<audio id="sound"  src="Loco.mp3"></audio>
+<audio id="noise"  src="santa.mp3"></audio>
+
+
+<script type="text/javascript">
+	
+
+let lightswitch = true	
+square.addEventListener("click", function(){
+	
+if (lightswitch == true)
+	{
+square.style.backgroundColor = "blue"
+sound.play()
+lightswitch = false
+}
+
+else if (lightswitch == false){
+square.style.backgroundColor = "blanchedalmond"
+sound.pause()
+lightswitch = true
+}
+})
+
+
+
+
+let lightflip = true	
+block.addEventListener("click", function(){
+	
+if (lightflip == true){
+block.style.backgroundColor = "red"
+noise.play()
+lightflip = false
+}
+
+else if (lightflip == false){
+block.style.backgroundColor = "seagreen"
+noise.pause()
+lightflip = true
+}
+})
+
+
+
+
+</script>
+
+	
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

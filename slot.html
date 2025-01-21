@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.box{
+		  display: inline-block;
+		  border: 1px solid black;
+		  width: 100px;
+		  height: 100px;
+		  margin: 4px;
+	}
+
+	#lever{
+			display: inline-block;
+		  	border: 1px solid black;
+		  	background-image: url(https://toyhou.se/19127055.01-high-roller/19140455.preview);
+		  	width: 100px;
+		  	height: 100px;
+		  	margin: 4px;
+	}
+	#getout{
+			height: 400px;
+			width: 1200px;
+			background-size: contain;
+			background-image: url(https://cdn.bignewsnetwork.com/cus1711424008935.jpg);
+			left: 500px;
+
+	}
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="box" id="box1"></div>
+<div class="box" id="box2"></div>
+<div class="box" id="box3"></div>
+
+<div id="lever"></div>
+
+<div id="scoreboard"></div>
+<div id="getout"></div>
+<script type="text/javascript">
+
+let score = 1000
+	
+let colors = ["blanchedalmond", "violet", "red", "lightgreen", "blue", "lavender", "darkgreen", "yellow", "hotpink", "orange"]
+
+
+console.log(scoreboard)
+
+
+lever.addEventListener("click", function(){
+
+score = score-100
+
+let random1 = Math.floor(Math.random()*colors.length)
+let random2 = Math.floor(Math.random()*colors.length)
+let random3 = Math.floor(Math.random()*colors.length)
+
+box1.style.backgroundColor = colors[random1]
+box2.style.backgroundColor = colors[random2]
+box3.style.backgroundColor = colors[random3]
+
+getout.style.opacity="0"
+
+scoreboard.innerText = score
+console.log(score)
+
+if (random1==random2 && random2==random3){
+	score = score + 1000
+	console.log(score)
+	scoreboard.innerText = score
+
+}
+else if (random1==random2){
+	score = score + 100
+	scoreboard.innerText = score
+
+}
+else if (random1==random3){
+	score = score + 100
+	scoreboard.innerText = score
+
+}
+else if (random2==random3){
+	score = score + 100
+	scoreboard.innerText = score
+
+}
+
+if (score<=-2000){
+	getout.style.opacity = "100"
+	
+}
+
+
+
+
+})
+
+
+</script>
+
+
+
+
+</body>
+</html>
