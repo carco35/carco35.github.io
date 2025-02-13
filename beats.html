@@ -22,7 +22,24 @@
 				display:inline-block;
 				margin:10px;
 		}
+		#three{
+				width: 100px;
+				height: 100px;
+				top: 100px;
+				left: 600px;
+				background-color: skyblue;
+				display:inline-block;
+				margin:10px;
+		}
+		#four{
+				width: 100px;
+				height: 100px;
+				top: 200px;
+				left: 100px;
+				background-color: yellow;
+				margin:10px;
 
+		}
 
 
 	</style>
@@ -31,9 +48,12 @@
 
 <div id="square"></div>
 <div id="block"></div>
+<div id="three"></div>
+<div id="four"></div>
 <audio id="sound"  src="beat1.mp3"></audio>
-<audio id="noise"  src="santa.mp3"></audio>
-
+<audio id="noise"  src="trench.mp3"></audio>
+<audio id="merry"  src="merry.mp3"></audio>
+<audio id="vocal1"  src="vocal1.mp3"></audio>
 
 <script type="text/javascript">
 	
@@ -43,7 +63,7 @@ square.addEventListener("click", function(){
 	
 if (lightswitch == true)
 	{
-square.style.backgroundColor = "blue"
+square.style.backgroundColor = "red"
 sound.play()
 lightswitch = false
 }
@@ -68,12 +88,45 @@ lightflip = false
 }
 
 else if (lightflip == false){
-block.style.backgroundColor = "seagreen"
+block.style.backgroundColor = "blue"
 noise.pause()
 lightflip = true
 }
 })
 
+
+let lightclip = true	
+three.addEventListener("click", function(){
+	
+if (lightclip == true){
+three.style.backgroundColor = "red"
+merry.play()
+lightclip = false
+}
+
+else if (lightclip == false){
+three.style.backgroundColor = "yellow"
+merry.pause()
+lightclip = true
+}
+})
+
+
+let lightblip = true	
+four.addEventListener("click", function(){
+	
+if (lightblip == true){
+four.style.backgroundColor = "red"
+vocal1.play()
+lightblip = false
+}
+
+else if (lightblip == false){
+four.style.backgroundColor = "yellow"
+vocal1.pause()
+lightblip = true
+}
+})
 
 
 

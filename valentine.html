@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		
+		#square1{
+				width: 300px;
+				height: 300px;
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2UrYuDGClaFJpyJ1JHdHmkrndSb3fpJ0pw&s);
+				background-size: contain;
+				position: absolute;
+				animation-name: peter;
+				animation-duration: 8s;
+				animation-iteration-count: infinite;
+				background-repeat: no-repeat;
+
+		}
+		#miner{
+
+			width: 250px;
+			height: 300px;
+			left: 500px;
+			top:400px;
+			background-image: url(https://img.freepik.com/free-vector/portrait-man-woman-with-facepalm-gestures_10045-635.jpg?semt=ais_hybrid);
+			background-size: contain;
+				position: absolute;
+				animation-name: jan;
+				animation-duration: 8s;
+				animation-iteration-count: infinite;
+				background-repeat: no-repeat;
+		}
+
+		@keyframes peter{
+			0%{
+				left: 0px;
+			}
+
+			/*50%{
+				
+			}*/
+			
+			100%{
+				left: 800px;
+				background-size: contain;
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIV5jCAjr4yc52V7TB36GyBvSSaVXqh9ZcQ&s);
+				
+
+			}
+
+
+
+		}
+
+		@keyframes jan{
+			0%{}
+			100%{
+				background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyZE-vE4pO_PJW89fwLg5DWJ8vt_NFb4VAg&s);
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="square1"></div>
+
+<div id="miner"></div>
+
+
+</body>
+</html>

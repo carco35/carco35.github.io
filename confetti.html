@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		.confetti{
+					width: 20px;
+					height: 20px;
+					background-color: darkmagenta;
+					display: inline-block;
+					margin: 2px;
+					position: absolute;
+					margin: 2px;
+					border: 1px solid black;
+/*					transition: .2s;*/
+		}
+
+
+	</style>
+	
+	
+</head>
+<body>
+<center><h1>Happy Valentines Day!</h1><center>
+	<!-- <div class="confetti"></div> -->
+<script type="text/javascript">
+		
+function makeConfetti(){ 
+let sprinkle=document.createElement("div")
+sprinkle.classList.add("confetti")
+document.body.appendChild(sprinkle)
+sprinkle.style.transform="rotate("+Math.random()*360+"deg)"
+sprinkle.style.top="0px"
+
+function fall(){
+			if (parseInt(sprinkle.style.top)>1000){
+				sprinkle.style.top="-100px"
+			} else {
+				sprinkle.style.top = parseInt(sprinkle.style.top) + Math.random()*50+"px"
+				sprinkle.style.left = Math.random()*2000+"px"
+			}
+
+
+}
+
+setInterval(fall,200)
+
+sprinkle.style.height = Math.random()*40+"px"
+sprinkle.style.width = Math.random()*20+"px"
+
+let r = Math.random()*255
+let g = Math.random()*255
+let b = Math.random()*255
+
+sprinkle.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+
+
+}
+
+for(let i=0; i<1000; i=i+1){
+makeConfetti()
+
+}
+	</script>
+</body>
+</html>
