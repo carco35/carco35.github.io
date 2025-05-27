@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		.text{
+			width:100px;
+			background-color:yellow;
+			height:100px;
+			display: inline-block;
+			margin:20px;
+
+			opacity:0;
+
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div id="text1" class="text"></div>
+
+	<div id="text2" class="text"></div>
+
+	<div id="text3" class="text"></div>
+
+	<script type="text/javascript">
+		
+		document.addEventListener("click", function(){
+
+			text1.innerText = "who is the goat?"
+			text2.innerText = "who is the next best goat?"
+			text3.innerText = "who won sb in 1972?"
+
+			text1.style.opacity = "1"
+			text2.style.opacity = "1"
+			text3.style.opacity = "1"
+
+
+		})
+	</script>
+
+</body>
+</html>

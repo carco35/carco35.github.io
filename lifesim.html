@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+		
+	#button{
+			width: 100px;
+			height: 100px;
+			background-color: cadetblue;
+
+	}
+	.fball{
+			width:300px;
+			left: 500px;
+			background-color:seagreen;
+			height:300px;
+			display: inline-block;
+			margin:20px;
+
+			opacity:0;
+
+	}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+	<div id="button">Age +1</div>
+	<div id="totalage"></div>
+	
+<button id="button1">Your Name</button>
+<p id="nameish"></p>
+<button id="button2">Your Pet</button>
+<p id="petish"></p>
+<button id="button3">Your Sport</button>
+<p id="sportish"></p>
+
+	<div id="fball1" class="fball">
+	<div id="fballtext1"></div>
+	<input id="fballAnswer1"></input>
+	<button id="fballsubmit1"></button>
+		<div id="fballtext1a"></div>
+
+	</div>
+
+
+<div id="fball2" class="fball">
+<div id="fballtext2"></div>
+<input id="fballAnswer2"></input>
+<button id="fballsubmit2"></button>
+	<div id="fballtext2a"></div>
+
+</div>
+
+
+<div id="fball3" class="fball">
+		<div id="fballtext3"></div>
+	<input id="fballAnswer3"></input>
+	<button id="fballsubmit3"></button>
+		<div id="fballtext3a"></div>
+
+
+</div>
+
+<script type="text/javascript">
+
+let name;
+let pet;
+let sport;
+let age = -1
+let text;
+
+console.log(totalage)
+
+
+button.addEventListener("click",function(){
+
+	age = age +1
+
+	totalage.innerText = age
+
+console.log(age)
+
+if(age == 0){
+name = prompt("Please enter your name")}
+
+
+if(age == 5){ 
+pet = prompt("Please enter a pet you would like to have")}
+
+if(age == 10){ 
+sport = prompt("Please enter the sport you would like to play professionally")}
+
+}) //end of button//
+
+
+
+
+
+button1.addEventListener("click", function(){
+
+		nameish.innerText=name
+
+
+	
+}) //end of button1
+button2.addEventListener("click", function(){
+
+		petish.innerText=pet
+
+
+	
+}) //end of button1
+
+
+button3.addEventListener("click", function(){
+
+		sportish.innerText=sport
+
+		if(sport == "Football" || "football"){
+			 fball1.style.opacity = "1"
+			 fball2.style.opacity = "1"
+			 fball3.style.opacity = "1"
+			 fballtext1.innerText = "What position do you want to play?(write out position in full)"
+			 fballtext2.innerText = "Who is more of an inspiration to you: Jameis Winston or Justin Fields?(Respond with Justin or Jameis)"
+
+			 fballtext3.innerText = "If you had the opportunity to train or stay home and watch tv which would you pick?(respond with either train or stay home)"
+
+			 fballsubmit1.addEventListener("click", function(){
+				fballtext1a=fballAnswer1.value
+				fball1.innerText = "You will be a " + fballtext1a + " in the NFL."
+					})
+
+
+			fballsubmit2.addEventListener("click", function(){
+		
+
+			if(fballtext2a.innerText == "Justin" || "justin"){
+				fball2.innerText = "You will play for the New York Jets."
+			}
+			if(fballtext2a.innerText == "Jameis" || "jameis"){
+				fball2.innerText = "You will play for the New York Giants."
+			}
+
+			}) //this is the end of the button event listener//
+
+
+			fballsubmit3.addEventListener("click", function(){
+				// fballtext3a=fballanswer3.value
+			
+			if(fballtext3a.innerText == "Train" || "train"){
+				fball3.innerText = "You will become MVP and win 10 Superbowls."
+			}
+			if(fballtext3a.innerText == "Stay Home" || "Stay home" || "stay home"){
+				fball3.innerText = "You will have a terrible NFL career."
+
+			}
+
+
+		})
+} //end of big football if statement
+else{
+	alert("Try out somewhere else! Thank you!")
+}
+
+
+}// end of functin in event listener
+)// end of the event listener
+
+
+
+</script>
+
+
+</body>
+</html>
